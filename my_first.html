@@ -1,0 +1,115 @@
+<!doctype html>
+<!-- index.html — your first HTML5 page -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My First HTML5 Page</title>
+
+  <!-- Simple styles embedded so one file is enough -->
+  <style>
+    :root {
+      --accent: #2b8cff;
+      --bg: #f6f9ff;
+      --card: #ffffff;
+      --muted: #666;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: #111;
+      line-height: 1.5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .card {
+      width: 100%;
+      max-width: 820px;
+      background: var(--card);
+      padding: 1.6rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 24px rgba(20,30,60,0.08);
+    }
+    header h1 { margin: 0 0 .25rem 0; font-size: 1.6rem; }
+    header p { margin: 0 0 1rem 0; color: var(--muted); }
+    nav a { color: var(--accent); text-decoration: none; margin-right: .8rem; }
+    .controls { display:flex; gap:.6rem; margin-top:1rem; align-items:center; }
+    button { padding:.5rem .8rem; border-radius:8px; border:none; cursor:pointer; background:var(--accent); color:white; }
+    input[type="text"] { padding:.45rem .6rem; border-radius:8px; border:1px solid #ddd; }
+    footer { margin-top:1.2rem; color:var(--muted); font-size:.9rem; }
+    pre { background:#f4f6fb; padding:.8rem; border-radius:8px; overflow:auto; }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <header>
+      <h1>Welcome — My First HTML5 Page</h1>
+      <p>A tiny interactive demo to show HTML, CSS, and JavaScript working together.</p>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#try">Try it</a>
+      </nav>
+    </header>
+
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">What this page shows</h2>
+      <ul>
+        <li>Clean HTML5 structure (doctype, head, body, semantic tags)</li>
+        <li>Responsive meta tag so it works on phones</li>
+        <li>Inline CSS for styling and simple JS for interactivity</li>
+      </ul>
+    </section>
+
+    <section id="try" aria-labelledby="try-title">
+      <h2 id="try-title">Try a small interactive example</h2>
+      <p>Type your name and click the button — JavaScript will greet you!</p>
+
+      <div class="controls">
+        <label for="name" class="sr-only">Your name</label>
+        <input id="name" type="text" placeholder="Type your name..." />
+        <button id="greetBtn">Greet me</button>
+      </div>
+
+      <p id="greeting" aria-live="polite" style="margin-top:1rem; font-weight:600;"></p>
+    </section>
+
+    <section aria-labelledby="code-title" style="margin-top:1rem">
+      <h2 id="code-title">Tiny code sample</h2>
+      <pre><code>&lt;!-- This is how you link JS or CSS outside the file --&gt;
+&lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;script src="app.js" defer&gt;&lt;/script&gt;</code></pre>
+    </section>
+
+    <footer>
+      <small>Saved as <strong>index.html</strong>. Open in any modern browser. — Happy coding! 🚀</small>
+    </footer>
+  </main>
+
+  <!-- Small JavaScript for interactivity -->
+  <script>
+    // DOM elements
+    const nameInput = document.getElementById('name');
+    const greetBtn = document.getElementById('greetBtn');
+    const greeting = document.getElementById('greeting');
+
+    // When user clicks the button, show a greeting
+    greetBtn.addEventListener('click', () => {
+      const name = nameInput.value.trim();
+      if (name === '') {
+        greeting.textContent = 'Hello! Please type your name above 🙂';
+      } else {
+        greeting.textContent = `Hello, ${name}! Welcome to HTML5.`;
+      }
+    });
+
+    // Optional: press Enter to trigger the button
+    nameInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') greetBtn.click();
+    });
+  </script>
+</body>
+</html>
