@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <head>
     <style>
-        p {
+        p.thick {
             border-top-style :dotted ;
             border-right-style : solid ;
             border-bottom-style: dashed ;
             border-left-style:double; 
             padding:2em ;
                 }
+        p.length{
+            border-style:solid ;
+            border-width:10px ;
+            padding:10px;
+        }
     </style>
 </head>
 <body>
     <h2> Border style idvidiual side </h2>
-    <p> Different border styles on all sides </p>
+    <p class="thick"> Different border styles on all sides </p>
+    <p class="length"> Border width:10px.</p>
 </body>
 </html> 
