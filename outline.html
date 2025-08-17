@@ -5,7 +5,16 @@
     <style>
         p{
             padding: 5px;
+        }  input {
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            outline: none; 
         }
+        input:focus {
+            outline: 3px solid blue;
+            outline-offset: 4px; }
+
     </style>
 </head>
 
@@ -21,6 +30,9 @@
     <p style="outline-style: outset;"> Outset outline. </p>
     <p style="outline-style: none;"> No outline. </p>
     <p style="outline-style: hidden;"> Hidden outline. </p>
+     <input type="text" 
+          placeholder="Focus me to see the outline" />
+
 </body>
 
 </html>
