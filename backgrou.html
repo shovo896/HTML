@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .container{
+                font-family:Arial ;
+                background-color:aqua;
+                color:aquamarine;
+                margin:20px;
+                display:flex ;
+                justify-content:space-around ;
+
+
+            }
+            .h2{
+                color:azure;
+            }
+            .styled-list{
+                list-style-type:none;
+                padding:0;
+                margin: 20px 0 ;
+            }
+            .stylec-list li {
+                background-color:black;
+                margin:5px 0 ;
+                padding: 10px;
+                border-radius:5px;
+                transition:background-color 0.3s ease;
+                display: flex ;
+                align-items:center ;
+            }
+            .styled-list li::before {
+                content:"";
+                color:bisque;
+                font-weight:bold;
+                margin-right:10px;
+            }
+            .styled-list-ol li::before{
+                content:counter(list-item)".";
+                font-weight:bold;
+                color:blue;
+            }
+            .styled-list li  :hover{
+                background-color:color(from color srgb r g b);
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="ul">
+                <h2> 
+                    Unordered list
+                </h2>
+                <ul class="styled-list"> 
+                    <li> first item </li>
+                    <li> second item </li>
+                    <li> third item </li>
+                    <li> fourth item </li>
+                </ul>
+            </div>
+        </div>
+    </body></html>
