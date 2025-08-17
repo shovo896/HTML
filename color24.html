@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .container {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        .styled-dl {
+            margin: 20px 0;
+            padding: 0;
+        }
+
+        .styled-dl dt {
+            background-color: #e3f2fd;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .styled-dl dd {
+            margin-left: 20px;
+            margin-bottom: 10px;
+            padding-left: 10px;
+            border-left: 3px solid #3498db;
+            color: #555;
+            background-color: #f1f8e9;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .styled-dl dt:hover,
+        .styled-dl dd:hover {
+            background-color: #bbdefb;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="dl">
+        <h2>Definition List</h2>
+            <dl class="styled-dl">
+                <dt>HTML</dt>
+                <dd> 
+                    A standard markup language for creating web 
+                    pages.
+                </dd>
+
+                <dt>CSS</dt>
+                <dd>
+                    A style sheet language used for describing the 
+                    presentation of a document.
+                </dd>
+
+                <dt>JavaScript</dt>
+                <dd>
+                    A programming language that enables interactive 
+                    web pages.
+                </dd>
+            </dl>
+        </div>
+    </div>
+</body>
+
+</html>
