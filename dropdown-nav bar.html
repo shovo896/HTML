@@ -1,0 +1,68 @@
+<html>
+<head>
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #208926;
+    }
+    li {
+        float: left;
+    }
+    li a,
+    .dropdown-option {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    li a:hover,
+    .dropdown:hover .dropdown-option {
+        background-color: #f39a1d;
+    }
+
+    li.dropdown {
+        display: inline-block;
+    }
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #44e2d5;
+        border: 1px solid #ccc;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        width: 120px;
+    }
+    .dropdown-menu a {
+        color: black;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    .dropdown-menu a:hover {
+        background-color: #ee3131;
+    }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+</style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Tutorialspoints</a></li>
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-option">Articles</a>
+            <div class="dropdown-menu">
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">Bootstrap</a>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
