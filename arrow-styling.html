@@ -3,6 +3,11 @@
 
 <head>
     <style>
+        .tooltip{
+            position:relative ;
+            display:inline-block;
+            cursor:pointer;
+        }
         .arrow {
             width: 0;
             height: 0;
@@ -36,6 +41,7 @@
             border-right: 10px solid transparent;
             border-bottom: 10px solid aqua;
             transition: transform 0.3s ease-in-out;
+            transform: rotate(135 deg) skew(10deg ,10deg);
         }
 
         .arrow-animate:hover {
