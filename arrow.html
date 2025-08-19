@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .arrow-up {
+            width: 0; 
+            height: 0; 
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid black;
+        }
+
+        .arrow-down{
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid;
+            border-top: 2px solid;
+            transform: rotate(225deg) skew(10deg, 10deg);
+        }
+        
+        .arrow-diagonal{
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid;
+            border-top: 2px solid;
+            transform: rotate(90deg) skew(10deg, 10deg);
+        }
+    </style>
+</head>
+
+<body>
+ <h3>Arrow Type 1</h3>   
+    <div class="arrow-up"></div>
+
+ <h3>Arrow Type 2</h3>
+    <div class="arrow-down"></div>
+    
+ <h3>Arrow Rotated</h3>
+    <div class="arrow-diagonal"></div>
+</body>
+
+</html>
