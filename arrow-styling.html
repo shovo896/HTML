@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .arrow {
+            width: 0;
+            height: 0;
+            margin: 20px;
+        }
+
+        .arrow-color {
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid red;
+        }
+
+        .arrow-shadow {
+            width: 20px;
+            height: 20px;
+            border-left: 2px solid;
+            border-top: 2px solid;
+            transform: rotate(135deg) skew(10deg, 10deg);
+            box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .arrow-rotated {
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid black;
+            transform: rotate(45deg);
+        }
+
+        .arrow-animate {
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid aqua;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .arrow-animate:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Colored Arrow</h3>
+    <div class="arrow arrow-color"></div>
+
+    <h3> Arrow with shadow </h3>
+    <div class="arrow arrow-shadow"></div>
+
+    <h3> Rotated arrow </h3>
+    <div class="arrow arrow-rotated"></div>
+
+    <h3> Animated arrow </h3>
+    <div class="arrow arrow-animate"></div>
+</body>
+
+</html>
