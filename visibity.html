@@ -1,12 +1,51 @@
 <html>
 <head>
 <style>
-   h2 {
-      visibility: hidden ;
+   .collapse {
+      visibility: collapse;
    }
+   table{
+    border-collapse:collapse;
+    color:bisque;
+    width:100%;
+    background-color: 2px solid black;
+    border:2px solid black ;
+   }
+   th,td{
+    border:2px solid black;
+    padding:2px;
+    text-align:left;
+    font-size:20px;   }
 </style>
 </head>
 <body>
    <h2>Tutorials Point CSS visibility</h2>
+   <table>
+    <tr>
+        <td>
+            visible
+        </td>
+        <td>
+            hidden 
+        </td>
+        <td class="collapse">
+            collapse 
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            initial
+            </td>
+        <td>
+            inherit
+        </td>
+        <td>
+            revert
+        </td>
+    
+
+    </tr>
+   </table>
 </body>
 </html>
