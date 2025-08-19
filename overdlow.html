@@ -8,11 +8,23 @@
                 background-color:lightgreen ;
                 border:2px solid #031926;
                  overflow:auto ;        }
+                 .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
         </style>
     </head>
     <body>
         <h2> css overflow property </h2>
         <p> Tutorial point is an online platform </p>
-        <p> offering a wide range of tutorials,courses </p>
+        <p> offering a wide range of tutorials,courses </p> <div class="clearfix">
+        <img src="stu..data..ana3.png" >
+        Here we added clearfix class to the containing element, 
+        to fix this problem.
+    </div>
+
     </body>
+
 </html>
