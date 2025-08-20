@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container {
+            height: 150px;
+            width: 250px;
+            padding: 10px;
+            border: 1px solid black;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #f0f0ff;            
+        }
+        .box {
+            height: 80px;
+            width: 80px;
+            border: 1px solid black;
+            display: inline-block;
+            transition: all 0.3s ease;
+            background-color: white;
+        }
+        .box1:hover {
+            background-color: #04af2f;
+            translate: 15px 10px;
+        }
+        .box2:hover {
+            background-color: #031926;
+            translate: -15% -15%;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS translate Property</h2>
+    <p>Translation on both x and y-axis.</p>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+    </div>    
+</body>
+</html>
