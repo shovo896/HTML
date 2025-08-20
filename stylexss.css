@@ -1,0 +1,28 @@
+<html>
+<head>
+<style>
+   .container {
+      width: 400px;
+      height: 200px;
+      background-color: #f2c3ee;
+      overflow: auto;
+      padding: 5px;
+   }
+   .box {
+      position: fixed;
+      top: 15px;
+      left: 60px;
+      padding: 5px;
+      background-color: #bbedbb;
+      text-align: center;
+   }
+</style>
+</head>
+<body>
+   <div class="container">
+      <p>This CSS tutorial covers everything from basic styling concepts and selectors to advanced techniques, such as flexbox, grid, animations, and CSS variables. This CSS tutorial is designed to help both beginners and experienced designers to make them masters in creating visually appealing, responsive, and modern web designs.</p>
+      <p class="box">Tutorials point CSS Position Fixed</p>
+      <p>CSS is the acronym for "Cascading Style Sheet". It's a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS helps the web developers to control the layout and other visual aspects of the web pages. CSS plays a crucial role in modern web development by providing the tools necessary to create visually appealing, accessible, and responsive websites.</p>
+   </div>
+</body>
+</html>
