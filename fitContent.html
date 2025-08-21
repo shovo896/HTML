@@ -1,38 +1,56 @@
 <html>
 <head>
 <style>
-   ul {
-      background-color: beige;
-      width: fit-content;
-      padding: 1.5em;
-      border: 2px solid black;
+   .box1 {
+      position: absolute;
+      height: 200px;
+      width: 280px;
+      background-color: #f0baba;
+      z-index: -3;
+      text-align: center;
+      padding: 3px;
+      left: 10px; 
+      top: 10px;
    }
-   li {
-      display: inline-flex;
-      background-color: orange;
-      border: 2px solid black;
-      padding: 0.5em;
+   .box2 {
+      position: absolute;
+      height: 140px;
+      width: 220px;
+      background-color: #eae98f;
+      z-index: -2;
+      text-align: center;
+      padding: 5px;
+      margin: 10px;
+      left: 30px; 
+      top: 30px;
    }
-   .props{
-    height:50px;
-   padding:20px;
-   text-align:center;
-   font-weight:bold;
-   font-size:20px;
-   background-color:aquamarine;
-
+   .box3 {
+      position: absolute;
+      height: 90px;
+      width: 160px;
+      background-color: #b7c8ae;
+      z-index: -1;
+      text-align: center;
+      padding: 5px;
+      margin: 20px;
+      left: 50px; 
+      top: 50px;
+   }
+   p {
+      margin-top: 250px;
    }
 </style>
 </head>
 <body>
-   <ul>
-      <li>Item1</li>
-      <li>Item2</li>
-      <li>Item3</li>
-      <li>Item4</li>
-   </ul>
-   <div class="props">
-    The div has opacity 2 
+   <p>The element with z-index value of -3 appears behind the element with the z-index value of -2 and -1.</p>
+   <div class="box1">
+      CSS z-index: -3
+   </div>
+   <div class="box2">
+      CSS z-index: -2
+   </div>
+   <div class="box3">
+      CSS z-index: -1
    </div>
 </body>
-</html>
+</html>   
