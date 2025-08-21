@@ -1,0 +1,43 @@
+<html>
+<style>
+    .normal {
+        zoom: normal;
+    }  .box {
+            height: 50px;
+            width: 200px;
+            border: 1px solid black;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .box:hover {
+            zoom: 2;
+        }
+
+        .box::before {
+            content: "This is a normal box";
+        }
+
+        .box:hover::before {
+            content: "";
+        }
+
+ .box:hover::after {
+            content: "This is after applying zoom with percent value.";
+            display: block;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+        }
+</style>
+
+<head>
+</head>
+
+<body>
+    <h2>CSS zoom Property</h2>
+    <p class="normal">CSS zoom with normal value.</p>
+    <div class="box"> give me twice </div>
+</body>
+
+</html>
