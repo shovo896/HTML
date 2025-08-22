@@ -1,41 +1,32 @@
-<!DOCTYPE html>
 <html>
 
 <head>
     <style>
-        .container {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 150px;
-            background-color: #e0f7e9;
-            margin: 0;
-        }
-    
-        .loader {
-            border: 8px solid #e0f7e9; 
-            border-top: 8px solid #34a853; 
+        .loader-test {
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+            aspect-ratio: 1;
             border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            animation: innerFrame-spin 2s ease infinite;
+            margin: 20px;       
+            background: linear-gradient(10deg,#ccc,red);
+            mask: conic-gradient(#0000,#000), 
+                  linear-gradient(#000 0 0) 
+                  content-box;
+            -webkit-mask-composite: source-out;
+            mask-composite: subtract;
+            animation: load 1s linear infinite;
         }
-        
-        @keyframes innerFrame-spin {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
+        @keyframes load {
+            to{
+                transform: rotate(1000turn)
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="loader"> </div>
-    </div>
+    <div class="loader-test"> </div>
 </body>
 
 </html>
